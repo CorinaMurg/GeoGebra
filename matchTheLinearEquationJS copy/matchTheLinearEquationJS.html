@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <meta name=viewport content="width=device-width,initial-scale=1">
+            <title>GeoGebra Applet: Match the Linear Equation</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            
+            <link href="styles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container" id="container">
+            
+            <div class="applet">
+                <label class="accessible">Geogebra Applet that generates random linear functions</label>
+                <div id="applet_container"></div>
+            </div>
+            
+            <div class="right-section">
+                <h1>Match the Linear Equation</h1>
+                
+                <div class="user-equation">
+                    <label for="inputEquation"><h3>Enter Your Equation</h3></label>
+                    <form id="form">
+                        <input type="search" class="user-input" id="userEquation" name="userEquation" placeholder="Examples: y = 2x + 1 or y = (2/3)x - 4) or y = (-5/4)x">
+                        <input type="button"  id="userEquationBtn" class="submitBtn" value="Enter your equation">
+                    </form>
+                </div>
+                
+                <div class="random-equation">
+                    <label for="randomEquation"><h3>Click to generate a linear equation.</h3></label>
+                    <form id="form">
+                        <input type="button" id="randomEquationBtn" class="submitBtn" name="randomEquation" value="New Equation" >
+                    </form>
+                </div>
+                
+
+            </div>   
+        </div>
+     
+        <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+        <script src="code.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

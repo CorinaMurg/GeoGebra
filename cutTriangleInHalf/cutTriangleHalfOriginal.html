@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta charset="utf-8"/>
+        <title>Divide the Equilateral Triangle in Half</title>
+        <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+        <style>
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            .applet, .textWrapper {
+                width: 35.2%;
+                height: 420px;
+                margin: 0 10px;
+            }
+
+            .textWrapper {
+                padding-left: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+            }
+
+            .applet {
+                position: relative;
+            }
+            .animate {
+                position: absolute;
+                bottom: -2.5%;
+                left: 10%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+
+            .accessible {
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                position: absolute;
+                left: -9999px;
+                top: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="applet" aria-hidden="true" >
+                <label class="accessible">Geogebra Applet with an image of an equilateral triangle</label>
+                <div id="ggbApplet" >
+                </div>
+                <p class="animate" tabindex="-1" aria-hidden="true">CLICK to Animate P</p>
+            </div>
+            
+            <div class="textWrapper">
+                <h1 tabindex="0">Divide the Equilateral Triangle in Half</h1>
+                
+                <br><p class="text" tabindex="1">GIVEN: Equilateral triangle BMC with side length 3.
+                The base of the equilateral triangle is dissected into four equal parts.<br>
+                Point P can slide along the side BC of the triangle.</p>
+                <p class="accessible">Point A is fixed on side BM, one unit away from vertex M.</p><br>
+                
+                <p class="not-accessible" aria-hidden="true">FIND: Position of point P such that the blue and the yellow areas are equal.</p><br>
+                <p class="accessible" tabindex="2">Find the position of point P along side BC such that segment AP disects the triangle in two 
+                    equal areas.
+                </p>
+            </div>
+        </div>
+        
+
+        <script>
+            var parameters = {
+                "id": "ggbApplet",
+                "width":450,
+                "height":420,
+                "autoHeight": true,
+                "showMenuBar":false,
+                "showAlgebraInput":false,
+                "borderColor":"#FFFFFF",
+                "showToolBar":false,
+                "showToolBarHelp":false,
+                "showResetIcon":false,
+                "enableLabelDrags":false,
+                "enableShiftDragZoom":false,
+                "enableRightClick":false,
+                "errorDialogsActive":false,
+                "useBrowserForJS":false,
+                "allowStyleBar":false,
+                "preventFocus":false,
+                "showZoomButtons":false,
+                "capturingThreshold":3,
+                "showFullscreenButton":false,
+                "scale":1,
+                "disableAutoScale":false,
+                "allowUpscale":false,
+                "clickToLoad":false,
+                "appName":"classic",
+                "buttonRounding":0.7,
+                "buttonShadows":false,
+                "language":"en",
+                "material_id":"ratrqzy5",
+            };
+
+            var views = {'is3D': 0,'AV': 0,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+
+            var applet = new GGBApplet(parameters, '5.0', views);
+
+            window.onload = function() 
+                {applet.inject('ggbApplet')};
+
+                applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=',
+                        'GeoGebra Loading Image',
+                        'Play Button Image');
+            // applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+            
+        </script>
+    </body>
+</html>

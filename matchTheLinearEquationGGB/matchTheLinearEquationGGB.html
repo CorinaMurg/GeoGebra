@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta charset="utf-8"/>
+        
+        <link href="styles.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <div class="container">
+            <div class="applet">
+                <label class="accessible">Geogebra Applet that generates random linear functions</label>
+                <div id="ggbApplet" >
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h1 tabindex="0">Match the Linear Equation</h1>
+                <pre></pre>
+                <p class="text" tabindex="1">Write an equation to match the given line.</p>
+                <pre></pre>
+
+                <div class="formWrapper">
+                    
+                    <label for="equation"><h3>Enter Your Equation</h3></label>
+                    <form id="form">
+                        <input type="search" class="user-input" name="inputEquation" placeholder="Examples: y = 2x + 1 or y = (2/3)x - 4) or y = (-5/4)x">
+                        <input type="button" onclick="evalInput(inputEquation.value)" value="Submit" class="submitBtn">
+                        
+                    </form>
+                </div>        
+                
+                <p class="text"><span class="span-bold">Check if correct:</span> your line should overlap with the given line.</p>
+                <pre></pre>
+                <p class="text"><span class="span-bold">Not overlapping?</span> Delete the line, and try again. 
+                    Check the review box below about how to find the equation of a line.</p><pre></pre>
+
+                <div class="review">
+                    <pre></pre>
+                    <h3>Review: Write an Equation in Slope-Intercept Form</h3>
+                    <p class="text">To write an equation in the form <span class="span-bold-review">y = mx + b</span> we need <span class="span-bold-review">m</span> 
+                        and <span class="span-bold-review">b</span>. </p>
+                        <pre></pre>
+                    <p>     <span class="span-bold-review">m</span> is the slope, or the "rise over run" between two points on the line.
+                    <p>     <span class="span-bold-review">b</span> is the y-intercept (the point where the line crosses the y axis).
+                </div>
+
+                <p class="text">More practice? Click the <span class="span-bold">New Line</span> button to generate a new linear equation, then try to match it again.
+                </p>
+                
+                
+                
+
+            </div>
+        </div>
+        <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+        <script src="code.js" type="text/javascript"></script>
+        
+
+    </body>
+</html>

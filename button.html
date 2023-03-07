@@ -1,0 +1,18 @@
+var parameters = {
+    "id": "ggbApplet",
+    "width": 500,
+    "height": 500,
+    "showMenuBar": false,
+    "showToolBar": false,
+    "showNewButton": false,
+    "appletOnLoad": function(api) {
+      api.setCoordSystem(-8, 8, -8, 8);
+      var customBtn = api.newButton("New Line", function() {
+        api.evalCommand("Line((0,0),(1,1))");
+      });
+      api.add(customBtn);
+    }
+  };
+  
+  var applet = new GGBApplet(parameters);
+  
