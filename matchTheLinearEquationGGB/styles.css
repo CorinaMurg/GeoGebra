@@ -31,12 +31,12 @@ html, body {
 }
 
 .accessible {
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        left: -9999px;
-        top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    top: auto;
 }
 
 .formWrapper {
@@ -51,17 +51,18 @@ form {
     margin-bottom: 0;
     
 }
+
 .user-input {
     margin-bottom: 25px;
     width: 73%;
-    background-color: gray;
+    background-color: rgb(247, 244, 244);
     height: 27px;
     border-radius: 5px;
     border: 2px gray solid;
 }
 
 ::placeholder {
-    color: white;
+    color: black;
     font-size: 110%;
 }
 
@@ -94,7 +95,7 @@ h3 {
 
 .review {
     font-size: 90%;
-    background-color: rgb(207, 247, 207);
+    background-color: var(--yellow);
     border: darkgray;
     border-radius: 5px;
     padding: 0.05px 10px;
